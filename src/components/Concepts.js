@@ -16,7 +16,7 @@ const Concepts = () => {
                 <h1 className={"conceptsTitle"}>Concepts</h1> 
                 <div className={"conceptsBox"} onClick={asyncClick}>
                     <div className={"conceptsBoxImg"}>
-                    <img src="javascript.png" height="90%" width ="90%" alt="tictacetoe"></img>
+                    <img src="javascript.png" height="90%" width ="90%" alt="async"></img>
                     </div>
                     <div className={"conceptsBoxTitle"}>Async Javascript</div>
                 </div>
