@@ -99,18 +99,14 @@ html, body {
   background-color: white;
 }
 
-.contactWrapper {
+.conceptsWrapper {
   display: flex;
   justify-content: center;
   width: 100%;
   background-color: white;
-  font-size:5rem;
-  height: 25rem;
-  padding: 10rem;
-  text-align:center;
 }
 
-.homeTitle, .projectsTitle {
+.homeTitle, .projectsTitle, .conceptsTitle, .asyncTitle {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   text-align: center;
@@ -123,14 +119,16 @@ html, body {
   margin-bottom: 0rem;
 }
 
-.homeTitle {
+.homeTitle, .asyncTitle {
   margin-bottom: -1rem;
 }
 
 
-.homeCanvas, .projectsCanvas, .contactCanvas {
+.homeCanvas, .projectsCanvas, .conceptsCanvas {
   background-color: white;
 }
+
+
 
 .selfPortrait {
   height: 15rem;
@@ -139,7 +137,7 @@ html, body {
   margin-top: 0rem;
 }
 
-.projectsBox {
+.projectsBox, .conceptsBox {
   height: 17rem;
   width: 15rem;
   margin: 2rem 0;
@@ -150,7 +148,7 @@ html, body {
   border: solid 1px black;
 }
 
-.projectsBoxImg {
+.projectsBoxImg, .conceptsBoxImg {
   height: 13rem;
   width: 100%;
   background-color: rgb(218, 218, 218);
@@ -159,7 +157,7 @@ html, body {
   align-items: center;
 }
 
-.projectsBoxTitle {
+.projectsBoxTitle, .conceptsBoxTitle {
   height: 3.95rem;
   width: 100%;
   background-color: rgb(0, 95, 211);
@@ -175,7 +173,7 @@ html, body {
   font-weight: bolder;
 }
 
-.projectsBox:hover {
+.projectsBox:hover, .conceptsBox:hover {
   opacity: .75;
 }
 
@@ -201,6 +199,16 @@ html, body {
   margin: 0 auto;
   text-decoration: underline;
   background-color: white;
+}
+
+.asyncDescription {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
@@ -245,7 +253,7 @@ html, body {
     border: 0;
   }
 
-  .homeCanvas, .projectsCanvas {
+  .homeCanvas, .projectsCanvas, .conceptsCanvas, .asyncCanvas {
     width: 70%;
   }
 
@@ -265,6 +273,10 @@ html, body {
   .selfDescription {
     width: 70%;
     margin: auto;
+  }
+
+  .asyncDescription p {
+    width: 70%;
   }
 
    .topBar {
