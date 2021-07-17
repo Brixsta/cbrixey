@@ -11,7 +11,7 @@ const Home = () => {
              Check out the Projects tab to see me utilize these technologies.
             </p>
             <div className={"selfPortrait"}>
-                <img height="100%" width="100%" src="https://objective-meitner-20183b.netlify.app/profilepic.jpeg"></img>
+                <img height="100%" width="100%" src="portrait.jpg" alt="portrait"></img>
             </div>
         </section>
     </div>

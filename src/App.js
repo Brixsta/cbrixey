@@ -40,9 +40,9 @@ class App extends React.Component {
         </header>
         <nav className={"navBar"}>
           <ul>
-            <li><a href="#" onClick={this.homeClick}>Home</a></li>
-            <li><a href="#" onClick={this.projectsClick}>Projects</a></li>
-            <li><a href="#" onClick={this.contactClick}>Contact</a></li>
+            <li><a onClick={this.homeClick}>Home</a></li>
+            <li><a onClick={this.projectsClick}>Projects</a></li>
+            <li><a onClick={this.contactClick}>Contact</a></li>
           </ul>
         </nav>
         {this.state.home === true && <Home />}
