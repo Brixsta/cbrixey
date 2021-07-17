@@ -62,7 +62,7 @@ html, body {
   justify-content: center;
 }
 
-.navBar a {
+.navBar .navLink {
   height: 5em;
   line-height: 5em;
   width: 100%;
@@ -82,7 +82,7 @@ html, body {
   transition: all .2s ease-in-out;
 }
 
-.navBar a:hover {
+.navBar .navLink:hover {
   background-color:black;
 }
 
@@ -241,7 +241,7 @@ html, body {
     
   }
 
-  .navBar a {
+  .navBar .navLink {
     border: 0;
   }
 
