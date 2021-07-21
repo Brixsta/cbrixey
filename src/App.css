@@ -11,8 +11,6 @@ html, body {
   background-color: rgb(218, 218, 218);
 }
 
-
-
 .topBar {
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
@@ -84,6 +82,7 @@ html, body {
 
 .navBar .navLink:hover {
   background-color:black;
+  cursor: pointer;
 }
 
 .homeWrapper {

@@ -10,27 +10,21 @@ class App extends React.Component {
     super();
 
     this.state = {
-      home: true,
-      projects: false,
-      concepts: false
+      currentPage: "Home",
+      count: 0
     }
-
-    this.homeClick = this.homeClick.bind(this);
-    this.projectsClick = this.projectsClick.bind(this);
-    this.conceptsClick = this.conceptsClick.bind(this);
   }
 
-  homeClick () {
-      this.setState({home: true, projects: false, concepts: false});
+  changePage (page, e) {
+      e.preventDefault();
+      if(this.state.currentPage === page) {
+        this.setState({count: this.state.count++})
+      } else {
+        this.setState({currentPage:`${page}`});
+      }
   }
 
-  projectsClick () {
-    this.setState({home: false, projects: true, concepts: false});
-  }
 
-  conceptsClick () {
-    this.setState({home: false, projects: false, concepts: true});
-  }
 
   render () {
     return (
@@ -40,14 +34,14 @@ class App extends React.Component {
         </header>
         <nav className={"navBar"}>
           <ul>
-            <li><div className={"navLink"} onClick={this.homeClick}>Home</div></li>
-            <li><div className={"navLink"} onClick={this.projectsClick}>Projects</div></li>
-            <li><div className={"navLink"} onClick={this.conceptsClick}>Concepts</div></li>
+            <li><div className={"navLink"} onClick={this.changePage.bind(this,"Home")}>Home</div></li>
+            <li><div className={"navLink"} onClick={this.changePage.bind(this,"Projects")}>Projects</div></li>
+            <li><div className={"navLink"} onClick={this.changePage.bind(this,"Concepts")}>Concepts</div></li>
           </ul>
         </nav>
-        {this.state.home === true && <Home />}
-        {this.state.projects === true && <Projects />}
-        {this.state.concepts === true && <Concepts />}
+        {this.state.currentPage === "Home" && <Home />}
+        {this.state.currentPage === "Projects" && <Projects />}
+        {this.state.currentPage === "Concepts" && <Concepts goBack={this.state.count}/>}
         <footer className={"footer"}>
           <div className={"socialMediaBar"}>
             <div className={"socialMediaBox"} onClick={()=> window.open("https://github.com/Brixsta", "_blank")}><img src="github.svg" height="100%" width="100%" alt="github"></img></div>
