@@ -1,5 +1,4 @@
 import React from 'react';
-import AsyncJS from './AsyncJS';
 
 class Concepts extends React.Component {
     
@@ -15,7 +14,7 @@ class Concepts extends React.Component {
                     <h1 className={"conceptsTitle"}>Concepts</h1> 
                     <div className={"conceptsBox"} onClick={()=>{this.props.changePage('AsyncJS')}}>
                         <div className={"conceptsBoxImg"}>
-                        <img src="javascript.png" height="90%" width ="90%" id='AsyncJS'></img>
+                        <img src="javascript.png" height="90%" width ="90%" alt='AsyncJS'></img>
                         </div>
                         <div className={"conceptsBoxTitle"}>Async Javascript</div>
                     </div>
