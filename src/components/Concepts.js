@@ -1,29 +1,28 @@
-import React, {useState} from 'react';
-import Async from './Async';
+import React from 'react';
+import AsyncJS from './AsyncJS';
 
-const Concepts = (props) => {
-    const [current, setState] = useState({async:false, concepts:true})
+class Concepts extends React.Component {
+    
 
-    const asyncClick = () => {
-  
-        setState({async:true, concepts:false})
-      }
+    constructor (props) {
+        super(props);
+    }
 
-
-    return (
+    render () {
+        return (
             <div className={"conceptsWrapper"}>
-                {current.concepts === true && <div className={"conceptsCanvas"}>
-                    <h1 className={"conceptsTitle"}>Concepts {props.goBack}</h1> 
-                    <div className={"conceptsBox"} onClick={asyncClick}>
+                <div className={"conceptsCanvas"}>
+                    <h1 className={"conceptsTitle"}>Concepts</h1> 
+                    <div className={"conceptsBox"} onClick={()=>{this.props.changePage('AsyncJS')}}>
                         <div className={"conceptsBoxImg"}>
-                        <img src="javascript.png" height="90%" width ="90%" alt="async"></img>
+                        <img src="javascript.png" height="90%" width ="90%" id='AsyncJS'></img>
                         </div>
                         <div className={"conceptsBoxTitle"}>Async Javascript</div>
                     </div>
-                </div>}
-                {current.async === true && <Async />}
+                </div>
             </div>
-    )
+        )
+    } 
 }
 
 export default Concepts;
