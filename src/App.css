@@ -223,7 +223,7 @@ html, body {
   height: 4rem;
   width: 20rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 .socialMediaBox {
@@ -231,7 +231,6 @@ html, body {
   width: 4rem;
   background-color: rgb(218, 218, 218);
   cursor: pointer;
-  position: relative;
 }
 
 @media screen and (min-width: 600px) {

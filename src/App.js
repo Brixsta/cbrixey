@@ -4,6 +4,9 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Concepts from './components/Concepts';
 import AsyncJS from './components/AsyncJS';
+// import { faGithub } from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 class App extends React.Component {
 

@@ -1,11 +1,6 @@
 import React from 'react';
 
 class Concepts extends React.Component {
-    
-
-    constructor (props) {
-        super(props);
-    }
 
     render () {
         return (
