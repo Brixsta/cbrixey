@@ -43,7 +43,7 @@ const Projects = () => {
                 </div>
                 <div className={"projectsBox"} onClick={()=> window.open("https://my-journal-application.herokuapp.com/", "_blank")}>
                     <div className={"projectsBoxImg"}>
-                    <img src="myjournal.jpg" height="90%" width ="90%" alt="fce"></img>
+                    <img src="myjournal.jpg" height="90%" width ="90%" alt="myjournal"></img>
                     </div>
                     <div className={"projectsBoxTitle"}>My Journal</div>
                 </div>
