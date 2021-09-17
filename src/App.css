@@ -98,14 +98,7 @@ html, body {
   background-color: white;
 }
 
-.conceptsWrapper, .asyncJSWrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: white;
-}
-
-.homeTitle, .projectsTitle, .conceptsTitle, .asyncJSTitle {
+.homeTitle, .projectsTitle {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   text-align: center;
@@ -123,7 +116,7 @@ html, body {
 }
 
 
-.homeCanvas, .projectsCanvas, .conceptsCanvas, asyncJSCanvas {
+.homeCanvas, .projectsCanvas {
   background-color: white;
 }
 
@@ -136,7 +129,7 @@ html, body {
   margin-top: 0rem;
 }
 
-.projectsBox, .conceptsBox {
+.projectsBox {
   height: 17rem;
   width: 15rem;
   margin: 2rem 0;
@@ -147,7 +140,7 @@ html, body {
   border: solid 1px black;
 }
 
-.projectsBoxImg, .conceptsBoxImg {
+.projectsBoxImg {
   height: 13rem;
   width: 100%;
   background-color: rgb(218, 218, 218);
@@ -156,7 +149,7 @@ html, body {
   align-items: center;
 }
 
-.projectsBoxTitle, .conceptsBoxTitle {
+.projectsBoxTitle {
   height: 3.95rem;
   width: 100%;
   background-color: rgb(0, 95, 211);
@@ -172,7 +165,7 @@ html, body {
   font-weight: bolder;
 }
 
-.projectsBox:hover, .conceptsBox:hover {
+.projectsBox:hover {
   opacity: .75;
 }
 
@@ -198,16 +191,6 @@ html, body {
   margin: 0 auto;
   text-decoration: underline;
   background-color: white;
-}
-
-.asyncJSDescription {
-  width: 100%;
-  font-size: 1rem;
-  line-height: 2rem;
-  font-family: 'Montserrat', sans-serif;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
 }
 
 .footer {
@@ -251,7 +234,7 @@ html, body {
     border: 0;
   }
 
-  .homeCanvas, .projectsCanvas, .conceptsCanvas, .asyncJSCanvas {
+  .homeCanvas, .projectsCanvas {
     width: 70%;
   }
 
@@ -271,10 +254,6 @@ html, body {
   .selfDescription {
     width: 70%;
     margin: auto;
-  }
-
-  .asyncJSDescription p {
-    width: 70%;
   }
 
    .topBar {
