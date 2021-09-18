@@ -2,9 +2,6 @@ import React from 'react';
 import './App.css';
 import Home from './components/Home';
 import Projects from './components/Projects';
-// import { faGithub } from '@fortawesome/free-brands-svg-icons';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 
 class App extends React.Component {
 
@@ -38,10 +35,16 @@ class App extends React.Component {
         {this.state.currentPage === "Home" && <Home />}
         {this.state.currentPage === "Projects" && <Projects />}
         <footer className={"footer"}>
-          <div className={"socialMediaBar"}>
-            <div className={"socialMediaBox"} onClick={()=> window.open("https://github.com/Brixsta", "_blank")}><img src="github.svg" height="100%" width="100%" alt="github"></img></div>
-            <div className={"socialMediaBox"} onClick={()=> window.open("https://linkedin.com/in/charles-brixey-53144680/", "_blank")}><img src="linkedin.svg" height="100%" width="100%" alt="linkedin"></img></div>
-            <div className={"socialMediaBox"} onClick={()=> window.open("mailto:Brixsta@gmail.com", "_blank")}><img src="email.svg" height="100%" width="100%" alt="email"></img></div>
+          <div className="social-media-bar" onClick={()=> window.open("https://github.com/Brixsta", "_blank")}>
+            <div className="social-media-box">
+              <i class="fab fa-github"></i>
+            </div>
+            <div className="social-media-box" onClick={()=> window.open("https://linkedin.com/in/charles-brixey-53144680/", "_blank")}>
+            <i class="fab fa-linkedin"></i>
+            </div>
+            <div className="social-media-box" onClick={()=> window.open("mailto:Brixsta@gmail.com", "_blank")}>
+              <i class="fas fa-envelope-open"></i>
+            </div>
           </div>
         </footer>
       </div>

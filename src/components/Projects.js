@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = () => {
     return (
-        <div className={"projectsWrapper"}>
+        <div className={"wrapper"}>
             <section className={"projectsCanvas"}>
                 <h1 className={"projectsTitle"}>Projects</h1>
                 <div className={"projectsBox"} onClick={()=> window.open("https://my-journal-application.herokuapp.com/", "_blank")}>
