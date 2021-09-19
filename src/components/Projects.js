@@ -17,6 +17,12 @@ const Projects = () => {
                     </div>
                     <div className={"projectsBoxTitle"}>Todo List</div>
                 </div>
+                <div className={"projectsBox"} onClick={()=> window.open("https://parched-town.surge.sh/", "_blank")}>
+                    <div className={"projectsBoxImg"}>
+                        <img src="tupac.jpg" height="90%" width ="90%" alt="tupac"></img>
+                    </div>
+                    <div className={"projectsBoxTitle"}>90s Rap Quiz</div>
+                </div>
                 <div className={"projectsBox"} onClick={()=> window.open("https://hidden-plateau-56299.herokuapp.com/", "_blank")}>
                     <div className={"projectsBoxImg"}>
                     <img src="deadceleb.jpg" height="90%" width ="90%" alt="deadceleb"></img>
