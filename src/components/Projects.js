@@ -17,7 +17,7 @@ const Projects = () => {
                     </div>
                     <div className={"projectsBoxTitle"}>Todo List</div>
                 </div>
-                <div className={"projectsBox"} onClick={()=> window.open("tiny-point.surge.sh", "_blank")}>
+                <div className={"projectsBox"} onClick={()=> window.open("https://tiny-point.surge.sh", "_blank")}>
                     <div className={"projectsBoxImg"}>
                         <img src="tupac.jpg" height="90%" width ="90%" alt="tupac"></img>
                     </div>
