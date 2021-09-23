@@ -91,7 +91,7 @@ html, body {
   background-color: white;
 }
 
-.homeTitle, .projectsTitle {
+.homeTitle, .projectsTitle, .videosTitle {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   text-align: center;
@@ -100,11 +100,11 @@ html, body {
   background-color: white;
 }
 
-.projectsTitle{
+.projectsTitle {
   margin-bottom: 0rem;
 }
 
-.homeTitle, .asyncTitle {
+.homeTitle {
   margin-bottom: -1rem;
 }
 
@@ -246,7 +246,7 @@ html, body {
     border: 0;
   }
 
-  .homeCanvas, .projectsCanvas {
+  .homeCanvas, .projectsCanvas, .videosCanvas {
     width: 70%;
   }
 
