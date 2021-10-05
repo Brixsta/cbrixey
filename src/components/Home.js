@@ -8,7 +8,7 @@ const Home = () => {
             <p className={'selfDescription'}>
             <span>Professional Overview:</span>
              Full stack engineer with experience in Javascript, Git, CSS/HTML, NodeJS, ExpressJS, React, Postgres, and Jquery.
-             Check out the Projects tab to see applications I've built.
+             Check out the Applications tab to see applications I've built.
             </p>
             <div className={"selfPortrait"}>
                 <img height="100%" width="100%" src="portrait.jpg" alt="portrait"></img>

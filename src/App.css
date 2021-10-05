@@ -1,18 +1,18 @@
-
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0px;
-  padding:0px;
+  padding: 0px;
   background-color: rgb(218, 218, 218);
 }
 
 .topBar {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2em;
   text-align: center;
   display: flex;
@@ -25,38 +25,38 @@ html, body {
 .topBar h1 {
   position: relative;
   width: 5em;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
   background-color: white;
   margin-top: 1.5rem;
 }
 
 .topBar h1::before {
-  content: '';
-  height: .2em;
+  content: "";
+  height: 0.2em;
   width: 2.9em;
   background-color: rgb(0, 95, 211);
   position: absolute;
   bottom: 1.5rem;
-  left: .78em;
+  left: 0.78em;
 }
 
 .navBar {
   background-color: red;
   width: 100%;
-  position:relative;
+  position: relative;
 }
 
 .navBar ul {
   background-color: rgb(0, 95, 211);
   display: flex;
   flex-direction: column;
-  padding: 0px; 
+  padding: 0px;
   border-top: solid 1px black;
   border-bottom: solid 1px black;
 }
 
 .navBar li {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -64,11 +64,10 @@ html, body {
   height: 5em;
   line-height: 5em;
   width: 100%;
-  /* background-color: rgb(15, 51, 140); */
   background-color: rgb(0, 95, 211);
   text-align: center;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.25em;
   color: white;
   border-top: solid 1px black;
@@ -77,11 +76,11 @@ html, body {
   user-select: none;
   font-weight: bold;
   text-decoration: none;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .navBar .navLink:hover {
-  background-color:black;
+  background-color: black;
   cursor: pointer;
 }
 
@@ -91,8 +90,10 @@ html, body {
   background-color: white;
 }
 
-.homeTitle, .projectsTitle, .videosTitle {
-  font-family: 'Montserrat', sans-serif;
+.homeTitle,
+.applicationsTitle,
+.videosTitle {
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   text-align: center;
   width: 100%;
@@ -100,7 +101,7 @@ html, body {
   background-color: white;
 }
 
-.projectsTitle {
+.applicationsTitle {
   margin-bottom: 0rem;
 }
 
@@ -108,12 +109,10 @@ html, body {
   margin-bottom: -1rem;
 }
 
-
-.homeCanvas, .projectsCanvas {
+.homeCanvas,
+.applicationsCanvas {
   background-color: white;
 }
-
-
 
 .selfPortrait {
   height: 15rem;
@@ -122,18 +121,20 @@ html, body {
   margin-top: 0rem;
 }
 
-.projectsBox {
+.applicationsBox,
+.videosBox {
   height: 17rem;
   width: 15rem;
   margin: 2rem 0;
   background-color: black;
   cursor: pointer;
-  transition: all .15s ease-in-out;
-  box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   border: solid 1px black;
 }
 
-.projectsBoxImg {
+.applicationsBoxImg,
+.videosBoxImg {
   height: 13rem;
   width: 100%;
   background-color: rgb(218, 218, 218);
@@ -142,7 +143,8 @@ html, body {
   align-items: center;
 }
 
-.projectsBoxTitle {
+.applicationsBoxTitle,
+.videosBoxTitle {
   height: 3.95rem;
   width: 100%;
   background-color: rgb(0, 95, 211);
@@ -154,18 +156,17 @@ html, body {
   align-items: center;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  box-sizing:border-box;
+  box-sizing: border-box;
   font-weight: bolder;
 }
 
-.projectsBox:hover {
-  opacity: .75;
+.applicationsBox:hover,
+.videosBox:hover {
+  opacity: 0.75;
 }
 
-
-
 .selfPortrait img {
-  box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   border-radius: 3px;
 }
 
@@ -173,7 +174,7 @@ html, body {
   width: 100%;
   font-size: 1.25rem;
   line-height: 2.5rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 2rem;
   background-color: white;
 }
@@ -239,27 +240,29 @@ html, body {
   .navBar li {
     background-color: red;
     width: 10rem;
-    
   }
 
   .navBar .navLink {
     border: 0;
   }
 
-  .homeCanvas, .projectsCanvas, .videosCanvas {
+  .homeCanvas,
+  .applicationsCanvas,
+  .videosCanvas {
     width: 70%;
   }
 
-  .projectsCanvas {
+  .applicationsCanvas,
+  .videosCanvas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
 
-  .projectsBox {
-    margin-left: .75rem;
-    margin-right: .75rem;
+  .applicationsBox {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 
   .selfDescription {
@@ -267,7 +270,7 @@ html, body {
     margin: auto;
   }
 
-   .topBar {
+  .topBar {
     display: flex;
     justify-content: left;
   }
@@ -279,7 +282,4 @@ html, body {
   .socialMediaBar {
     width: 25rem;
   }
-
 }
-
-

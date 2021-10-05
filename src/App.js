@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Home from './components/Home';
-import Projects from './components/Projects';
+import Applications from './components/Applications';
 import Videos from './components/Videos';
 
 class App extends React.Component {
@@ -30,12 +30,12 @@ class App extends React.Component {
         <nav className={"navBar"}>
           <ul>
             <li><div className={"navLink"} onClick={()=>{this.changePage("Home")}}>Home</div></li>
-            <li><div className={"navLink"} onClick={()=>{this.changePage("Projects")}}>Projects</div></li>
+            <li><div className={"navLink"} onClick={()=>{this.changePage("Applications")}}>Applications</div></li>
             <li><div className={"navLink"} onClick={()=>{this.changePage("Videos")}}>Videos</div></li>
           </ul>
         </nav>
         {this.state.currentPage === "Home" && <Home />}
-        {this.state.currentPage === "Projects" && <Projects />}
+        {this.state.currentPage === "Applications" && <Applications />}
         {this.state.currentPage === "Videos" && <Videos />}
         <footer className={"footer"}>
           <div className="social-media-bar" onClick={()=> window.open("https://github.com/Brixsta", "_blank")}>
