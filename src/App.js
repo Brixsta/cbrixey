@@ -31,7 +31,7 @@ class App extends React.Component {
           <ul>
             <li><div className={"navLink"} onClick={()=>{this.changePage("Home")}}>Home</div></li>
             <li><div className={"navLink"} onClick={()=>{this.changePage("Applications")}}>Applications</div></li>
-            <li><div className={"navLink"} onClick={()=>{this.changePage("Videos")}}>Videos</div></li>
+            <li><div className={"navLink"} onClick={()=>{this.changePage("Videos")}}>My YouTube Channel</div></li>
           </ul>
         </nav>
         {this.state.currentPage === "Home" && <Home />}
