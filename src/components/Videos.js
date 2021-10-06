@@ -21,7 +21,7 @@ const Videos = () => {
                         <div className={"videosBoxImg"}>
                         <img src="fizzbuzz.jpg" height="90%" width ="90%" alt="RemoveDupesWithSet"></img>
                         </div>
-                        <div className={"videosBoxTitle"}>Remove Dupes with Set</div>
+                        <div className={"videosBoxTitle"}>Remove Dupes w/Set</div>
                 </div>
                 <div className={"videosBox"} onClick={()=> window.open("https://www.youtube.com/watch?v=pOdCNrg6ngE&ab_channel=N3RDyB0iz", "_blank")}>
                         <div className={"videosBoxImg"}>
