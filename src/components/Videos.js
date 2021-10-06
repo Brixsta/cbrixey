@@ -13,7 +13,7 @@ const Videos = () => {
                 </div>
                 <div className={"videosBox"} onClick={()=> window.open("https://www.youtube.com/watch?v=PrAonne9v1s&t=40s&ab_channel=N3RDyB0iz", "_blank")}>
                         <div className={"videosBoxImg"}>
-                        <img src="jslogo.png" height="90%" width ="90%" alt="fizzbuzz"></img>
+                        <img src="jslogo.png" height="90%" width ="90%" alt="fizzBuzz"></img>
                         </div>
                         <div className={"videosBoxTitle"}>Fizzbuzz</div>
                 </div>
@@ -34,6 +34,12 @@ const Videos = () => {
                         <img src="jslogo.png" height="90%" width ="90%" alt="Binary Search"></img>
                         </div>
                         <div className={"videosBoxTitle"}>Binary Search</div>
+                </div>
+                <div className={"videosBox"} onClick={()=> window.open("https://www.youtube.com/watch?v=0_5Ic45hW_E&ab_channel=N3RDyB0iz", "_blank")}>
+                        <div className={"videosBoxImg"}>
+                        <img src="jslogo.png" height="90%" width ="90%" alt="Bubble Sort"></img>
+                        </div>
+                        <div className={"videosBoxTitle"}>Bubble Sort</div>
                 </div>
             </section>
         </div>
