@@ -91,8 +91,7 @@ body {
 }
 
 .homeTitle,
-.applicationsTitle,
-.videosTitle {
+.applicationsTitle {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   text-align: center;
@@ -101,8 +100,7 @@ body {
   background-color: white;
 }
 
-.applicationsTitle,
-.videosTitle {
+.applicationsTitle {
   margin-bottom: 0rem;
 }
 
@@ -122,8 +120,7 @@ body {
   margin-top: 0rem;
 }
 
-.applicationsBox,
-.videosBox {
+.applicationsBox {
   height: 17rem;
   width: 15rem;
   margin: 2rem 0;
@@ -134,8 +131,7 @@ body {
   border: solid 1px black;
 }
 
-.applicationsBoxImg,
-.videosBoxImg {
+.applicationsBoxImg {
   height: 13rem;
   width: 100%;
   background-color: rgb(218, 218, 218);
@@ -144,8 +140,7 @@ body {
   align-items: center;
 }
 
-.applicationsBoxTitle,
-.videosBoxTitle {
+.applicationsBoxTitle {
   height: 3.95rem;
   width: 100%;
   background-color: rgb(0, 95, 211);
@@ -161,8 +156,7 @@ body {
   font-weight: bolder;
 }
 
-.applicationsBox:hover,
-.videosBox:hover {
+.applicationsBox:hover {
   opacity: 0.75;
 }
 
@@ -215,19 +209,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0rem 2rem;
-}
-
-.social-media-box:nth-child(1) {
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: -4px;
-}
-
-.social-media-box:nth-child(2) {
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: -8px;
+  margin: 0rem 1rem;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 600px) {
@@ -248,13 +231,11 @@ body {
   }
 
   .homeCanvas,
-  .applicationsCanvas,
-  .videosCanvas {
+  .applicationsCanvas {
     width: 70%;
   }
 
-  .applicationsCanvas,
-  .videosCanvas {
+  .applicationsCanvas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -282,5 +263,14 @@ body {
 
   .socialMediaBar {
     width: 25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .applicationsCanvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
