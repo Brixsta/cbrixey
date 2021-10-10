@@ -1,52 +1,64 @@
 import React from 'react';
 
+// Simulate a backend API returning a JSON for React to map
+const data = [
+    {
+        "title": "My Journal",
+        "link": "https://my-journal-application.herokuapp.com/",
+        "img": "myjournal.jpg",
+        "alt": "myjournal"
+    },
+    {
+        "title": "Todo List",
+        "link": "https://mylistoftodos.herokuapp.com/",
+        "img": "todolist.jpg",
+        "alt": "todolist"
+    },
+    {
+        "title": "90s Rap Quiz",
+        "link": "https://tiny-point.surge.sh",
+        "img": "tupac.jpg",
+        "alt": "tupac"
+    },
+    {
+        "title": "Dead Celeb Database",
+        "link": "https://hidden-plateau-56299.herokuapp.com/",
+        "img": "deadceleb.jpg",
+        "alt": "deadceleb"
+    },
+    {
+        "title": "Splatter",
+        "link": "https://brave-disgust.surge.sh/",
+        "img": "splatter.jpg",
+        "alt": "splatter"
+    },
+    {
+        "title": "Tic Tac Toe",
+        "link": "https://guiltless-wheel.surge.sh/",
+        "img": "tictactoe.jpg",
+        "alt": "tictactoe"
+    },
+    {
+        "title": "Cats on Click",
+        "link": "https://lovely-baseball.surge.sh/",
+        "img": "catsonclick.jpg",
+        "alt": "catsonclick"
+    }
+]
+
 const Applications = () => {
     return (
         <div className={"wrapper"}>
             <section className={"applicationsCanvas"}>
                 <h1 className={"applicationsTitle"}>Applications</h1>
-                <div className={"applicationsBox"} onClick={()=> window.open("https://my-journal-application.herokuapp.com/", "_blank")}>
-                    <div className={"applicationsBoxImg"}>
-                    <img src="myjournal.jpg" height="90%" width ="90%" alt="myjournal"></img>
+                {data.map((apps) => ( // map/loop through each object from data for cleaner frontend code
+                    <div className={"applicationsBox"} onClick={() => window.open(`${apps.link}`, "_blank")}>
+                        <div className={"applicationsBoxImg"}>
+                            <img src={apps.img} height="90%" width="90%" alt={apps.alt}></img>
+                        </div>
+                        <div className={"applicationsBoxTitle"}>{apps.title}</div>
                     </div>
-                    <div className={"applicationsBoxTitle"}>My Journal</div>
-                </div>
-                <div className={"applicationsBox"} onClick={()=> window.open("https://mylistoftodos.herokuapp.com/", "_blank")}>
-                    <div className={"applicationsBoxImg"}>
-                        <img src="todolist.jpg" height="90%" width ="90%" alt="todolist"></img>
-                    </div>
-                    <div className={"applicationsBoxTitle"}>Todo List</div>
-                </div>
-                <div className={"applicationsBox"} onClick={()=> window.open("https://tiny-point.surge.sh", "_blank")}>
-                    <div className={"applicationsBoxImg"}>
-                        <img src="tupac.jpg" height="90%" width ="90%" alt="tupac"></img>
-                    </div>
-                    <div className={"applicationsBoxTitle"}>90s Rap Quiz</div>
-                </div>
-                <div className={"applicationsBox"} onClick={()=> window.open("https://hidden-plateau-56299.herokuapp.com/", "_blank")}>
-                    <div className={"applicationsBoxImg"}>
-                    <img src="deadceleb.jpg" height="90%" width ="90%" alt="deadceleb"></img>
-                    </div>
-                    <div className={"applicationsBoxTitle"}>Dead Celeb Database</div>
-                </div>
-                <div className={"applicationsBox"} onClick={()=> window.open("https://brave-disgust.surge.sh/", "_blank")}>
-                    <div className={"applicationsBoxImg"}>
-                        <img src="splatter.jpg" height="90%" width ="90%" alt="splatter"></img>
-                    </div>
-                    <div className={"applicationsBoxTitle"}>Splatter</div>
-                </div>
-                <div className={"applicationsBox"} onClick={()=> window.open("https://guiltless-wheel.surge.sh/", "_blank")}>
-                    <div className={"applicationsBoxImg"}>
-                    <img src="tictactoe.jpg" height="90%" width ="90%" alt="tictacetoe"></img>
-                    </div>
-                    <div className={"applicationsBoxTitle"}>Tic Tac Toe</div>
-                </div>
-                <div className={"applicationsBox"} onClick={()=> window.open("https://lovely-baseball.surge.sh/", "_blank")}>
-                    <div className={"applicationsBoxImg"}>
-                    <img src="catsonclick.jpg" height="90%" width ="90%" alt="catsonclick"></img>
-                    </div>
-                    <div className={"applicationsBoxTitle"}>Cats On Click</div>
-                </div>
+                ))}
             </section>
         </div>
     )
