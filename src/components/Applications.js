@@ -1,7 +1,13 @@
 import React from 'react';
 
 // Simulate a backend API returning a JSON for React to map
-const data = [
+const myApps = [
+    {
+        "title": "Phonebook App",
+        "link": "https://terrific-argument.surge.sh/",
+        "img": "phonebook.jpg",
+        "alt": "phonebook app"
+    },
     {
         "title": "My Journal",
         "link": "https://my-journal-application.herokuapp.com/",
@@ -51,7 +57,7 @@ const Applications = () => {
         <div className={"wrapper"}>
             <section className={"applicationsCanvas"}>
                 <h1 className={"applicationsTitle"}>Applications</h1>
-                {data.map((apps) => ( // map/loop through each object from data for cleaner frontend code
+                {myApps.map((apps) => ( // map/loop through each object from data for cleaner frontend code
                     <div className={"applicationsBox"} onClick={() => window.open(`${apps.link}`, "_blank")}>
                         <div className={"applicationsBoxImg"}>
                             <img src={apps.img} height="90%" width="90%" alt={apps.alt}></img>
