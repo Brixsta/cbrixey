@@ -3,6 +3,12 @@ import React from 'react';
 // Simulate a backend API returning a JSON for React to map
 const myApps = [
     {
+        "title": "WWF Memory",
+        "link": "https://rapid-drug.surge.sh/",
+        "img": "WWF.jpg",
+        "alt": "WWF Memory"
+    },
+    {
         "title": "Phonebook App",
         "link": "https://terrific-argument.surge.sh/",
         "img": "phonebook.jpg",
