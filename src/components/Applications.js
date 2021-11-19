@@ -4,7 +4,7 @@ import React from 'react';
 const myApps = [
     {
         "title": "WWF Memory",
-        "link": "https://rapid-drug.surge.sh/",
+        "link": "http://boorish-man.surge.sh/",
         "img": "WWF.jpg",
         "alt": "WWF Memory"
     },
