@@ -9,6 +9,12 @@ const myApps = [
         "alt": "WWF Memory"
     },
     {
+        "title": "Magic 8Ball",
+        "link": "https://deadpan-breath.surge.sh/",
+        "img": "8ball.jpg",
+        "alt": "Magic 8Ball"
+    },
+    {
         "title": "Phonebook App",
         "link": "https://terrific-argument.surge.sh/",
         "img": "phonebook.jpg",
