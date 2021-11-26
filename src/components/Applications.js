@@ -4,13 +4,13 @@ import React from 'react';
 const myApps = [
     {
         "title": "WWF Memory",
-        "link": "https://oval-division.surge.sh/",
+        "link": "http://boorish-man.surge.sh/",
         "img": "WWF.jpg",
         "alt": "WWF Memory"
     },
     {
         "title": "Magic 8Ball",
-        "link": "https://wanting-sense.surge.sh/",
+        "link": "https://oval-division.surge.sh/",
         "img": "8ball.jpg",
         "alt": "Magic 8Ball"
     },
