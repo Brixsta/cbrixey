@@ -10,7 +10,7 @@ const myApps = [
     },
     {
         "title": "Magic 8Ball",
-        "link": "https://deadpan-breath.surge.sh/",
+        "link": "https://wanting-sense.surge.sh/",
         "img": "8ball.jpg",
         "alt": "Magic 8Ball"
     },
