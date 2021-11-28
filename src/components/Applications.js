@@ -45,6 +45,12 @@ const myApps = [
         "alt": "deadceleb"
     },
     {
+    "title": "Lonely Clock",
+    "link": "http://purring-play.surge.sh/",
+    "img": "clock.jpg",
+    "alt": "Lonely Clock"
+    },
+    {
         "title": "Splatter",
         "link": "https://brave-disgust.surge.sh/",
         "img": "splatter.jpg",
