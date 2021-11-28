@@ -16,7 +16,7 @@ const myApps = [
     },
     {
         "title": "Phonebook App",
-        "link": "https://clumsy-plough.surge.sh/",
+        "link": "https://terrific-argument.surge.sh/",
         "img": "phonebook.jpg",
         "alt": "phonebook app"
     },
